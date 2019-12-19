@@ -39,7 +39,7 @@ bool contain(string &s) {
 }
 
 void dfs(int cur) {
-    for (int i = 0; i < MAX_L; ++i) {
+    for (int i = 0; i < MAXL; ++i) {
         if (trie[cur].next[i] != -1) {
             dfs(trie[cur].next[i]);
         }
